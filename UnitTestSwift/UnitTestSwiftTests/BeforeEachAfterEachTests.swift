@@ -7,6 +7,7 @@
 
 import Quick
 
+/// Exemplo de uso do BeforeEach e AfterEach
 class BeforeEachAfterEach: QuickSpec {
   override func spec() {
     describe("beforeEach and afterEach behaviour") {

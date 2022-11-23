@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		1A37910084182A85DB55B5DB /* Pods_UnitTestSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB33366A49C7561AC6695561 /* Pods_UnitTestSwiftTests.framework */; };
 		2CF313B65DC9621809352D5A /* Pods_UnitTestSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4AE4645F08B71F382F4C2558 /* Pods_UnitTestSwift.framework */; };
+		5721B214292D271D009276BA /* AsyncProcessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5721B213292D271D009276BA /* AsyncProcessTests.swift */; };
 		5731E729291C449B00ABAE93 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731E728291C449B00ABAE93 /* AppDelegate.swift */; };
 		5731E72B291C449B00ABAE93 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5731E72A291C449B00ABAE93 /* SceneDelegate.swift */; };
 		5731E732291C449D00ABAE93 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5731E731291C449D00ABAE93 /* Assets.xcassets */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		3C4D18E7D992EF6AE453BAB4 /* Pods-UnitTestSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UnitTestSwift.release.xcconfig"; path = "Target Support Files/Pods-UnitTestSwift/Pods-UnitTestSwift.release.xcconfig"; sourceTree = "<group>"; };
 		4AE4645F08B71F382F4C2558 /* Pods_UnitTestSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UnitTestSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5721B213292D271D009276BA /* AsyncProcessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncProcessTests.swift; sourceTree = "<group>"; };
 		5731E725291C449B00ABAE93 /* UnitTestSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UnitTestSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5731E728291C449B00ABAE93 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5731E72A291C449B00ABAE93 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -87,6 +89,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5721B211292D26A2009276BA /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				57D008A629281C06009EB23C /* AccountViewModelTests.swift */,
+				57A764E1292C0C87002B37ED /* AccountViewControllerTests.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		5721B212292D26B6009276BA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5731E75B291C4A7D00ABAE93 /* StringUtilsTest.swift */,
+				57D0089B2926AF60009EB23C /* StringUtilsSpec.swift */,
+				5731E76129256E0000ABAE93 /* AccountBalanceTests.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		5731E71C291C449B00ABAE93 = {
 			isa = PBXGroup;
 			children = (
@@ -125,13 +146,11 @@
 		5731E73E291C449E00ABAE93 /* UnitTestSwiftTests */ = {
 			isa = PBXGroup;
 			children = (
+				5721B212292D26B6009276BA /* Utils */,
+				5721B211292D26A2009276BA /* Account */,
 				5731E73F291C449E00ABAE93 /* UnitTestSwiftTests.swift */,
-				5731E75B291C4A7D00ABAE93 /* StringUtilsTest.swift */,
-				5731E76129256E0000ABAE93 /* AccountBalanceTests.swift */,
-				57D0089B2926AF60009EB23C /* StringUtilsSpec.swift */,
 				57D0089D2926CE20009EB23C /* BeforeEachAfterEachTests.swift */,
-				57D008A629281C06009EB23C /* AccountViewModelTests.swift */,
-				57A764E1292C0C87002B37ED /* AccountViewControllerTests.swift */,
+				5721B213292D271D009276BA /* AsyncProcessTests.swift */,
 			);
 			path = UnitTestSwiftTests;
 			sourceTree = "<group>";
@@ -359,6 +378,7 @@
 			files = (
 				57D008A729281C06009EB23C /* AccountViewModelTests.swift in Sources */,
 				5731E75C291C4A7D00ABAE93 /* StringUtilsTest.swift in Sources */,
+				5721B214292D271D009276BA /* AsyncProcessTests.swift in Sources */,
 				5731E740291C449E00ABAE93 /* UnitTestSwiftTests.swift in Sources */,
 				5731E76229256E0000ABAE93 /* AccountBalanceTests.swift in Sources */,
 				57D0089C2926AF60009EB23C /* StringUtilsSpec.swift in Sources */,
